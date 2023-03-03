@@ -21,5 +21,7 @@ for k in range(1, 11):
 plt.plot(range(1, 11), inertias, marker='o')
 plt.xlabel('Number of clusters (k)')
 plt.ylabel('Within-cluster sum of squares (inertia)')
+plt.xticks(range(1, 11))  # modify x-axis ticks
 plt.title('Elbow Method for Optimal k')
 plt.show()
+
