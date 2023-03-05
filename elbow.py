@@ -13,7 +13,7 @@ inertias = []
 
 # Try k from 1 to 10 clusters and calculate the within-cluster sum of squares (inertia) for each value of k
 for k in range(1, 11):
-    kmeans = KMeans(n_clusters=k, random_state=42)
+    kmeans = KMeans(n_clusters=k, random_state=8)
     kmeans.fit(X)
     inertias.append(kmeans.inertia_)
 
